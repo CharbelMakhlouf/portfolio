@@ -14,21 +14,43 @@
 
 
 .table-wrapper {
-    margin-left: 390px;
-    padding: 20px;
-    width: 500px; 
+    /* margin-left: 390px;
+    padding: 20px; */
+    display: block;
+    width: 580px; 
+    margin: 0 auto;
 }
 .form-wrapper {
-    margin-left: 390px;
-    padding: 20px;
+    /* margin-left: 390px; */
+    padding: 25px;
     border: 20px solid #ffffff;
     border-radius: 30px;
-    width: 500px;
+   /* width: 500px; */
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+
 }
 
 .footer-wrapper {
-    margin-top: 20px;
+    display: block;
+    /* margin-top: 20px; */
+    width: 20px;
     padding: 20px; 
+    margin: 0 auto;
 }
+.ul-wrapper {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+a:hover {
+    background-color: #ff0000;
+}
+a:active {
+    background-color: #ffff00;
+}
+
 
 
