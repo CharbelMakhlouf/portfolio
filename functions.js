@@ -83,6 +83,8 @@ const movies = [
     // 18. Check if all movies directed by "Christopher Nolan" have a rating higher than 8.5
     const allNolanMoviesHighRated = movies.filter(movie => movie.director === "Christopher Nolan")
     .every(movie => movie.rating > 8.5);
+    
+    //commit
   
     
     
