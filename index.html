@@ -112,6 +112,77 @@
             <input type="submit" value="Submit" />
             <br><br>
         </form>
+        <h1>Brand Information</h1>
+        
+  <!-- Container to display the brand data -->
+  <div id="brand-container">
+
+  <script>
+    async function fetchBrandData() {
+      const apiKey = 'iVm/WCoVl9yGr7T+59X98lo9F4GSGLyF7dSdtP41OB0=';  // Your actual API key
+      const url = 'https://api.brandfetch.io/v2/brands/brandfetch.com';  // API URL
+
+      try {
+        const response = await fetch(url, {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${apiKey}`,
+            'Content-Type': 'application/json'
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error(`Error: ${response.status} ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        console.log('Brand Data:', data);
+        
+        // Call the function to update the HTML with the fetched data
+        displayBrandData(data);
+      } catch (error) {
+        console.error('Error fetching brand data:', error);
+        document.getElementById('brand-container').innerHTML = 'Error fetching brand data.';
+      }
+    }
+
+    function displayBrandData(data) {
+      const container = document.getElementById('brand-container');
+      
+      const srcValues = data.logos.flatMap(item => item.formats.map(format => format.src));
+      const logosHTML = srcValues.map(logo => `<img src="${logo}" alt="Logo" width="50px" height="50px">`).join('');
+
+      
+      console.log("src values =" + srcValues);
+      
+      
+      
+      const brandHTML = `
+        <div class="brand">
+          <h2>${data.name}</h2>
+          <p><strong>Domain:</strong> ${data.domain}</p>
+          <p><strong>Description:</strong> ${data.description}</p>
+          <p class="colors"><strong>Colors:</strong> 
+            ${data.colors.map(color => `<span style="background-color: ${color.hex};">${color.hex}</span>`).join('')}
+          </p>
+          <div class="logos">
+            <strong>Logos:</strong> 
+            ${logosHTML}
+          </div>
+        </div>
+      `;
+      
+      // Insert the generated HTML into the container
+      container.innerHTML = brandHTML;
+    }
+
+    // Fetch the brand data when the page loads
+    fetchBrandData();
+
+    
+  </script>
+ </div> 
+  
             <footer class="footer-wrapper">
                 <a href="https://www.linkedin.com/in/charbel-makhlouf-9a7204271" target="_blank">
                     <img src="assets/linkedin.svg" alt="link to my linkedin page"  width="35"/>
@@ -124,5 +195,6 @@
                 </a>
             </footer>
     </div>
+    
 </body>
 </html>
