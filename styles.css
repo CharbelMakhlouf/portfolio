@@ -77,3 +77,13 @@ a:active {
     max-width: 400px;
     padding: 10px;
 }
+
+.brand {
+    margin-top: 20px;
+  }
+  .logos img {
+    max-width: 200px;
+    margin: 10px;
+    display: inline-block;
+  }
+  
