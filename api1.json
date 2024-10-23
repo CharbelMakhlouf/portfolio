@@ -1,0 +1,190 @@
+{
+  "id": "id6O2oGzv-",
+  "name": "Google",
+  "domain": "google.com",
+  "claimed": false,
+  "description": "Our mission is to organize the world’s information and make it universally accessible and useful.",
+  "longDescription": "Google is a multinational technology company that specializes in Internet-related services and products. It was founded by Larry Page and Sergey Brin while they were Ph.D. Initially, Google operated as a search engine, revolutionizing the way information is accessed on the web by delivering highly relevant search results. Its headquarters is located in Mountain View, California, known as the Googleplex. Google offers a wide range of products and services. Its primary and most popular product is its search engine, which is available in more than 150 languages worldwide. In addition to search, Google provides online advertising technologies, cloud computing, software, and hardware products. Its popular software services include Gmail, Google Maps, Google Drive, Google Photos, and YouTube. Google's hardware products include Pixel smartphones, Google Home, and Chromecast. Operating on a global scale, Google has established major subsidiaries, such as YouTube, which is a leading online video-sharing platform, and Google Cloud, which offers cloud infrastructure and services to businesses. Google also has joint ventures and partnerships, including Android Inc., which developed the Android operating system for mobile devices, and Waymo, a self-driving car technology company. Google is a dominant player in the tech industry and holds a significant market position. It generates most of its revenue from advertising through its search engine and YouTube. In terms of global sales, Google recorded over $160 billion in revenue in 2019, making it one of the most valuable companies in the world. Its main competitors include tech giants like Amazon, Apple, Facebook, and Microsoft. Throughout its history, Google has achieved numerous milestones and played a crucial role in shaping the digital landscape. It launched its initial public offering in 2004, and in the following years, it acquired several companies to expand its product portfolio. Noteworthy acquisitions include YouTube in 2006 and Android Inc. As of the latest updates, Google continues to innovate and expand its services. It has recently focused on artificial intelligence, machine learning, and cloud computing to deliver advanced solutions to its global user base. Google also faces challenges regarding data privacy and antitrust concerns, prompting the company to adapt its strategies and policies to maintain its position as a leader in the tech industry. In conclusion, Google is a world-renowned technology company with its headquarters in Mountain View, California. It offers a wide range of products and services, including its search engine, software, and hardware products. With a strong market position and global sales, Google continues to lead the way in the tech industry. Notably, it has made significant acquisitions and partnerships to enhance its offerings. As of now, Google continues to innovate and adapt to the evolving digital landscape, focusing on emerging technologies to provide advanced solutions to its users worldwide.",
+  "links": [
+    {
+      "name": "crunchbase",
+      "url": "https://crunchbase.com/organization/google"
+    },
+    { "name": "twitter", "url": "https://twitter.com/google" },
+    { "name": "instagram", "url": "https://instagram.com/google" },
+    { "name": "linkedin", "url": "https://linkedin.com/company/google" },
+    { "name": "facebook", "url": "https://facebook.com/Google" }
+  ],
+  "logos": [
+    {
+      "theme": "dark",
+      "formats": [
+        {
+          "src": "https://cdn.brandfetch.io/id6O2oGzv-/theme/dark/logo.svg?k=idLqm9MDG7",
+          "background": "transparent",
+          "format": "svg",
+          "size": 1933
+        },
+        {
+          "src": "https://cdn.brandfetch.io/id6O2oGzv-/w/800/h/251/theme/dark/logo.png?k=idLqm9MDG7",
+          "background": "transparent",
+          "format": "png",
+          "height": 251,
+          "width": 800,
+          "size": 21577
+        }
+      ],
+      "tags": [],
+      "type": "logo"
+    },
+    {
+      "theme": "dark",
+      "formats": [
+        {
+          "src": "https://cdn.brandfetch.io/id6O2oGzv-/theme/dark/symbol.svg?k=idLqm9MDG7",
+          "background": "transparent",
+          "format": "svg",
+          "size": 851
+        },
+        {
+          "src": "https://cdn.brandfetch.io/id6O2oGzv-/w/800/h/800/theme/dark/symbol.png?k=idLqm9MDG7",
+          "background": "transparent",
+          "format": "png",
+          "height": 800,
+          "width": 800,
+          "size": 29934
+        }
+      ],
+      "tags": [],
+      "type": "symbol"
+    },
+    {
+      "theme": "dark",
+      "formats": [
+        {
+          "src": "https://cdn.brandfetch.io/id6O2oGzv-/w/400/h/400/theme/dark/icon.jpeg?k=idLqm9MDG7",
+          "background": null,
+          "format": "jpeg",
+          "height": 400,
+          "width": 400,
+          "size": 11895
+        }
+      ],
+      "tags": [],
+      "type": "icon"
+    }
+  ],
+  "colors": [
+    { "hex": "#4285F4", "type": "accent", "brightness": 127 },
+    { "hex": "#FFFFFF", "type": "light", "brightness": 255 },
+    { "hex": "#424242", "type": "dark", "brightness": 66 },
+    { "hex": "#34A853", "type": "brand", "brightness": 137 },
+    { "hex": "#FBBC05", "type": "brand", "brightness": 188 },
+    { "hex": "#EA4335", "type": "brand", "brightness": 101 }
+  ],
+  "fonts": [
+    {
+      "name": "Google Sans",
+      "type": "title",
+      "origin": "custom",
+      "originId": null,
+      "weights": []
+    },
+    {
+      "name": "Google Sans Text",
+      "type": "body",
+      "origin": "custom",
+      "originId": null,
+      "weights": []
+    }
+  ],
+  "images": [
+    {
+      "formats": [
+        {
+          "src": "https://cdn.brandfetch.io/id6O2oGzv-/w/1500/h/500/iddEBso-QB.jpeg?k=idLqm9MDG7",
+          "background": null,
+          "format": "jpeg",
+          "height": 500,
+          "width": 1500,
+          "size": 46016
+        }
+      ],
+      "tags": [],
+      "type": "banner"
+    }
+  ],
+  "qualityScore": 0.9230769230769231,
+  "company": {
+    "employees": 10001,
+    "foundedYear": null,
+    "industries": [
+      {
+        "score": 0.4154023230075836,
+        "id": "28",
+        "name": "Computers Electronics and Technology",
+        "emoji": "🖥",
+        "parent": null,
+        "slug": "computers-electronics-and-technology"
+      },
+      {
+        "score": 0.3256067931652069,
+        "id": "32",
+        "name": "Computers Electronics and Technology",
+        "emoji": "🖥",
+        "parent": {
+          "emoji": "🖥",
+          "id": "28",
+          "name": "Computers Electronics and Technology",
+          "slug": "computers-electronics-and-technology"
+        },
+        "slug": "computers-electronics-and-technology"
+      },
+      {
+        "score": 0.26540836691856384,
+        "id": "37",
+        "name": "Programming and Developer Software",
+        "emoji": "🖥",
+        "parent": {
+          "emoji": "🖥",
+          "id": "28",
+          "name": "Computers Electronics and Technology",
+          "slug": "computers-electronics-and-technology"
+        },
+        "slug": "programming-and-developer-software"
+      },
+      {
+        "score": 0.258627712726593,
+        "id": "10",
+        "name": "Business and Consumer Services",
+        "emoji": "📊",
+        "parent": null,
+        "slug": "business-and-consumer-services"
+      },
+      {
+        "score": 0.20583191514015198,
+        "id": "13",
+        "name": "Marketing and Advertising",
+        "emoji": "📊",
+        "parent": {
+          "emoji": "📊",
+          "id": "10",
+          "name": "Business and Consumer Services",
+          "slug": "business-and-consumer-services"
+        },
+        "slug": "marketing-and-advertising"
+      }
+    ],
+    "kind": null,
+    "location": {
+      "city": "Mountain View",
+      "country": "United States",
+      "countryCode": "US",
+      "region": "Americas",
+      "state": "California",
+      "subregion": "Northern America"
+    }
+  },
+  "isNsfw": false,
+  "urn": "urn:brandfetch:brand:id6O2oGzv-"
+}

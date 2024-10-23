@@ -115,71 +115,49 @@
         <h1>Brand Information</h1>
         
   <!-- Container to display the brand data -->
-  <div id="brand-container">
+  <div id="data-container">
 
   <script>
-    async function fetchBrandData() {
-      const apiKey = 'iVm/WCoVl9yGr7T+59X98lo9F4GSGLyF7dSdtP41OB0=';  // Your actual API key
-      const url = 'https://api.brandfetch.io/v2/brands/brandfetch.com';  // API URL
-
-      try {
-        const response = await fetch(url, {
-          method: 'GET',
-          headers: {
-            'Authorization': `Bearer ${apiKey}`,
-            'Content-Type': 'application/json'
-          }
+    async function fetchBrand(brand) {
+    try {
+        const apiKey = 'iVm/WCoVl9yGr7T+59X98lo9F4GSGLyF7dSdtP41OB0=';
+        const response = await fetch(`https://api.brandfetch.io/v2/brands/${brand}`, {
+            headers: {
+                'Authorization': `Bearer ${apiKey}`
+            }
         });
-
-        if (!response.ok) {
-          throw new Error(`Error: ${response.status} ${response.statusText}`);
+        if(!response.ok){
+            throw new Error('HTTP error!');
         }
-
         const data = await response.json();
-        console.log('Brand Data:', data);
-        
-        // Call the function to update the HTML with the fetched data
-        displayBrandData(data);
-      } catch (error) {
-        console.error('Error fetching brand data:', error);
-        document.getElementById('brand-container').innerHTML = 'Error fetching brand data.';
-      }
+        const container = document.getElementById('data-container');
+        const h1 = document.createElement('h1');
+        h1.textContent = `Brand: ${data.name}`;
+        const descr = document.createElement('p');
+        descr.textContent = `Description: ${data.description}`;
+        container.appendChild(h1);
+        container.appendChild(descr);
+
+
+        data.logos.forEach(logo => {
+            const imageLogo = document.createElement('img');
+            imageLogo.src = logo.formats[0].src;
+            imageLogo.width = 25;
+            imageLogo.style.margin = '10px'
+            container.appendChild(imageLogo);
+        });
+    } catch (error) {
+        console.log('Error: ', error);
     }
 
-    function displayBrandData(data) {
-      const container = document.getElementById('brand-container');
-      
-      const srcValues = data.logos.flatMap(item => item.formats.map(format => format.src));
-      const logosHTML = srcValues.map(logo => `<img src="${logo}" alt="Logo" width="50px" height="50px">`).join('');
+}
 
-      
-      console.log("src values =" + srcValues);
-      
-      
-      
-      const brandHTML = `
-        <div class="brand">
-          <h2>${data.name}</h2>
-          <p><strong>Domain:</strong> ${data.domain}</p>
-          <p><strong>Description:</strong> ${data.description}</p>
-          <p class="colors"><strong>Colors:</strong> 
-            ${data.colors.map(color => `<span style="background-color: ${color.hex};">${color.hex}</span>`).join('')}
-          </p>
-          <div class="logos">
-            <strong>Logos:</strong> 
-            ${logosHTML}
-          </div>
-        </div>
-      `;
-      
-      // Insert the generated HTML into the container
-      container.innerHTML = brandHTML;
-    }
-
-    // Fetch the brand data when the page loads
-    fetchBrandData();
-
-    
+fetchBrand('brandfetch.com');
+fetchBrand('apple.com');
+fetchBrand('google.com');
+fetchBrand('facebook.com');
+fetchBrand('realmadrid.com');
+fetchBrand('fcbarcelona.com');
   </script>
  </div> 
   
